@@ -1,6 +1,6 @@
-This package provides a way to bundle an [astilectron](https://github.com/asticode/go-astilectron) app using the [bootstrap](https://github.com/asticode/go-astilectron-bootstrap).
+This package provides a way to bundle an [astilectron](https://github.com/kfrico/go-astilectron) app using the [bootstrap](https://github.com/kfrico/go-astilectron-bootstrap).
 
-Check out the [demo](https://github.com/asticode/go-astilectron-demo) to see a working example.
+Check out the [demo](https://github.com/kfrico/go-astilectron-demo) to see a working example.
 
 # Warning
 
@@ -11,7 +11,7 @@ This project is not maintained anymore.
 Run the following command:
 
 ```shell
-go get -u github.com/asticode/go-astilectron-bundler/...
+go get -u github.com/kfrico/go-astilectron-bundler/...
 ```
 
 # Build the binary
@@ -19,7 +19,7 @@ go get -u github.com/asticode/go-astilectron-bundler/...
 Run the following command:
 
 ```shell
-go install github.com/asticode/go-astilectron-bundler/astilectron-bundler
+go install github.com/kfrico/go-astilectron-bundler/astilectron-bundler
 ```
 
 # Configuration
@@ -235,10 +235,10 @@ astilectron-bundler cc
 When building for `linux` you may face an error looking like this:
 
 ```shell
-FATA[0009] bundling failed: bundling for environment linux/amd64 failed: building failed: # github.com/asticode/go-astilectron-demo
+FATA[0009] bundling failed: bundling for environment linux/amd64 failed: building failed: # github.com/kfrico/go-astilectron-demo
 /usr/local/go/pkg/tool/linux_amd64/link: running gcc failed: exit status 1
 /usr/bin/ld: i386 architecture of input file `/tmp/go-link-275377070/000000.o' is incompatible with i386:x86-64 output
 collect2: error: ld returned 1 exit status
 ```
 
-Thanks to [this comment](https://github.com/asticode/go-astilectron-demo/issues/28#issuecomment-509050603), you need to add the `ldflags` key to your `bundler.json` with the value `{"linkmode":["internal"]}`.
+Thanks to [this comment](https://github.com/kfrico/go-astilectron-demo/issues/28#issuecomment-509050603), you need to add the `ldflags` key to your `bundler.json` with the value `{"linkmode":["internal"]}`.

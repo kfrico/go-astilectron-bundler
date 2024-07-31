@@ -15,8 +15,8 @@ import (
 
 	"github.com/akavel/rsrc/rsrc"
 	"github.com/asticode/go-astikit"
-	"github.com/asticode/go-astilectron"
 	"github.com/asticode/go-bindata"
+	"github.com/kfrico/go-astilectron"
 	"github.com/sam-kamerer/go-plister"
 )
 
